@@ -1,0 +1,90 @@
+/* ==========================================================================
+   KMS TRAVELS — KEYFRAME ANIMATIONS & GLOW EFFECTS
+   ========================================================================== */
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px var(--accent-glow);
+    }
+    50% {
+        box-shadow: 0 0 35px var(--accent-glow);
+    }
+}
+
+@keyframes floatSmooth {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes roadGridMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 100px;
+    }
+}
+
+@keyframes themeFade {
+    0% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Application Classes */
+.animate-glow {
+    animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.animate-float {
+    animation: floatSmooth 4s infinite ease-in-out;
+}
+
+body.theme-changing {
+    animation: themeFade 0.5s ease-out;
+}
+
+/* Background Particle Road Effect */
+.hero-bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+    background-size: 32px 32px;
+    mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+/* Glass Shimmer on hover */
+.shimmer-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.15) 50%,
+        transparent 100%
+    );
+    transform: skewX(-25deg);
+    transition: left 0.75s ease;
+}
+
+.shimmer-hover:hover::before {
+    left: 150%;
+}
