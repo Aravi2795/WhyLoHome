@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- 24K Royal Gold Gradients -->
+    <linearGradient id="goldSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4D0"/>
+      <stop offset="25%" stop-color="#F3C64F"/>
+      <stop offset="50%" stop-color="#EAA626"/>
+      <stop offset="75%" stop-color="#FCDA74"/>
+      <stop offset="100%" stop-color="#C58518"/>
+    </linearGradient>
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#F7D377"/>
+      <stop offset="70%" stop-color="#D99B26"/>
+      <stop offset="100%" stop-color="#8F5E0F"/>
+    </linearGradient>
+    <linearGradient id="shieldBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141c19"/>
+      <stop offset="100%" stop-color="#080e0c"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0.9  0 1 0 0 0.7  0 0 1 0 0.2  0 0 0 0.4 0"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(400, 140)" filter="url(#subtleShadow)">
+    <!-- Ornate Top Crown Flourish -->
+    <g stroke="url(#goldSheen)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 0,-85 C -8,-75 -15,-65 0,-50 C 15,-65 8,-75 0,-85 Z" fill="url(#goldLight)"/>
+      <circle cx="0" cy="-88" r="4" fill="url(#goldLight)"/>
+      <path d="M -15,-68 C -35,-80 -45,-55 -25,-48 C -15,-45 0,-48 0,-48 C 0,-48 15,-45 25,-48 C 45,-55 35,-80 15,-68"/>
+      <circle cx="-35" cy="-78" r="3" fill="url(#goldLight)"/>
+      <circle cx="35" cy="-78" r="3" fill="url(#goldLight)"/>
+      <path d="M -8,-52 C -22,-60 -38,-50 -32,-35 C -28,-25 -10,-32 0,-30 C 10,-32 28,-25 32,-35 C 38,-50 22,-60 8,-52"/>
+    </g>
+
+    <!-- Side Baroque Filigree Laurels (Left & Right) -->
+    <!-- Left Side -->
+    <g stroke="url(#goldSheen)" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <!-- Upper Filigree -->
+      <path d="M -60,-35 C -85,-50 -115,-30 -95,-5 C -85,6 -65,-5 -55,-15"/>
+      <circle cx="-102" cy="-28" r="3.5" fill="url(#goldLight)"/>
+      <path d="M -80,-10 C -110,0 -125,35 -95,45 C -75,52 -60,25 -55,10"/>
+      <path d="M -115,25 C -135,30 -140,55 -118,65 C -100,72 -80,50 -70,35"/>
+      <circle cx="-130" cy="40" r="3.5" fill="url(#goldLight)"/>
+      <path d="M -85,45 C -115,70 -105,105 -75,100 C -55,95 -50,65 -50,45"/>
+      <path d="M -100,80 C -120,105 -95,130 -70,120 C -50,110 -40,85 -45,65"/>
+      <circle cx="-105" cy="115" r="3.5" fill="url(#goldLight)"/>
+      <path d="M -65,105 C -75,135 -45,155 -25,140 C -10,130 -20,105 -35,95"/>
+      
+      <!-- Leaf flourishes -->
+      <path d="M -105,-15 C -115,-20 -118,-10 -108,-5 Z" fill="url(#goldLight)"/>
+      <path d="M -125,10 C -135,5 -138,18 -126,20 Z" fill="url(#goldLight)"/>
+      <path d="M -115,60 C -125,60 -125,75 -112,72 Z" fill="url(#goldLight)"/>
+      <path d="M -90,105 C -100,115 -85,125 -80,112 Z" fill="url(#goldLight)"/>
+    </g>
+
+    <!-- Right Side (Mirrored) -->
+    <g stroke="url(#goldSheen)" stroke-width="2.5" fill="none" stroke-linecap="round">
+      <!-- Upper Filigree -->
+      <path d="M 60,-35 C 85,-50 115,-30 95,-5 C 85,6 65,-5 55,-15"/>
+      <circle cx="102" cy="-28" r="3.5" fill="url(#goldLight)"/>
+      <path d="M 80,-10 C 110,0 125,35 95,45 C 75,52 60,25 55,10"/>
+      <path d="M 115,25 C 135,30 140,55 118,65 C 100,72 80,50 70,35"/>
+      <circle cx="130" cy="40" r="3.5" fill="url(#goldLight)"/>
+      <path d="M 85,45 C 115,70 105,105 75,100 C 55,95 50,65 50,45"/>
+      <path d="M 100,80 C 120,105 95,130 70,120 C 50,110 40,85 45,65"/>
+      <circle cx="105" cy="115" r="3.5" fill="url(#goldLight)"/>
+      <path d="M 65,105 C 75,135 45,155 25,140 C 10,130 20,105 35,95"/>
+
+      <!-- Leaf flourishes -->
+      <path d="M 105,-15 C 115,-20 118,-10 108,-5 Z" fill="url(#goldLight)"/>
+      <path d="M 125,10 C 135,5 138,18 126,20 Z" fill="url(#goldLight)"/>
+      <path d="M 115,60 C 125,60 125,75 112,72 Z" fill="url(#goldLight)"/>
+      <path d="M 90,105 C 100,115 85,125 80,112 Z" fill="url(#goldLight)"/>
+    </g>
+
+    <!-- The Royal Shield -->
+    <!-- Outer Shield Frame -->
+    <path d="M -56,-32 
+             L 56,-32 
+             C 62,-32 64,-28 64,-20
+             L 64,30
+             C 64,75 35,115 0,135
+             C -35,115 -64,75 -64,30
+             L -64,-20
+             C -64,-28 -62,-32 -56,-32 Z" 
+          fill="url(#shieldBg)" stroke="url(#goldLight)" stroke-width="4.5" filter="url(#goldGlow)"/>
+
+    <!-- Inner Shield Inset Border -->
+    <path d="M -47,-24 
+             L 47,-24 
+             L 54,28
+             C 54,68 28,103 0,120
+             C -28,103 -54,68 -54,28
+             L -47,-24 Z" 
+          fill="none" stroke="url(#goldSheen)" stroke-width="1.8" stroke-dasharray="3,1.5"/>
+
+    <!-- Monogram: "SGS" Stylized Royal Crest Monogram inside Shield -->
+    <g transform="translate(0, 42)" text-anchor="middle" font-family="'Cinzel', 'Playfair Display', Georgia, serif">
+      <!-- Left S -->
+      <text x="-20" y="-8" font-size="36" font-weight="bold" fill="url(#goldLight)" letter-spacing="1">S</text>
+      <!-- Center G (Slightly lower and bigger) -->
+      <text x="0" y="24" font-size="44" font-weight="900" fill="url(#goldLight)">G</text>
+      <!-- Right S -->
+      <text x="20" y="38" font-size="36" font-weight="bold" fill="url(#goldLight)" letter-spacing="1">S</text>
+    </g>
+  </g>
+
+  <!-- Typography: WHYLOHOME -->
+  <g transform="translate(400, 345)" text-anchor="middle">
+    <!-- Brand Name -->
+    <text x="0" y="0" 
+          font-family="'Cinzel', 'Playfair Display', 'Cinzel Decorative', 'Trajan Pro', Georgia, serif" 
+          font-size="62" 
+          font-weight="900" 
+          letter-spacing="9" 
+          fill="url(#goldLight)" 
+          filter="url(#goldGlow)">
+      WHYLOHOME
+    </text>
+
+    <!-- Dotted Accent Lines flanking EVENT MANAGEMENT -->
+    <g stroke="url(#goldSheen)" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="3 4">
+      <line x1="-340" y1="46" x2="-230" y2="46" />
+      <line x1="230" y1="46" x2="340" y2="46" />
+    </g>
+
+    <!-- Subtitle: EVENT MANAGEMENT -->
+    <text x="0" y="54" 
+          font-family="'Plus Jakarta Sans', 'Montserrat', 'Inter', sans-serif" 
+          font-size="25" 
+          font-weight="800" 
+          letter-spacing="14" 
+          fill="url(#goldSheen)">
+      EVENT MANAGEMENT
+    </text>
+
+    <!-- Slogan: Your Celebration, Our Passion -->
+    <text x="0" y="102" 
+          font-family="'Great Vibes', 'Playfair Display', 'Dancing Script', cursive" 
+          font-size="33" 
+          font-style="italic" 
+          font-weight="500" 
+          letter-spacing="2" 
+          fill="#FAF4E8">
+      Your Celebration , Our Passion
+    </text>
+  </g>
+</svg>
