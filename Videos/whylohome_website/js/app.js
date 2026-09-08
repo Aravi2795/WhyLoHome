@@ -383,6 +383,7 @@ function initBeforeAfterSlider() {
   const container = document.getElementById('beforeAfterContainer');
   const handle = document.getElementById('baHandle');
   const tooltip = document.getElementById('baTooltip');
+  const beforeImgTag = document.getElementById('baBeforeImgTag');
   const afterImgTag = document.getElementById('baAfterImgTag');
   const afterBadge = document.getElementById('baAfterBadge');
 
@@ -510,8 +511,17 @@ function initBeforeAfterSlider() {
       stagePills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
 
+      const newBefore = pill.getAttribute('data-stage-before');
       const newImg = pill.getAttribute('data-stage-img');
       const newTitle = pill.getAttribute('data-stage-title');
+
+      if (beforeImgTag && newBefore) {
+        beforeImgTag.style.opacity = '0';
+        setTimeout(() => {
+          beforeImgTag.src = newBefore;
+          beforeImgTag.style.opacity = '1';
+        }, 150);
+      }
 
       if (afterImgTag && newImg) {
         afterImgTag.style.opacity = '0';

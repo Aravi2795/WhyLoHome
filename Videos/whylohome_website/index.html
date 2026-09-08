@@ -1400,29 +1400,28 @@
             </button>
           </div>
 
-          <!-- Transformed Stage Concept Switcher -->
+          <!-- Transformed Venue Concept Switcher -->
           <div class="ba-stage-picker">
-            <span class="ba-stage-label">Decor Concept:</span>
-            <button type="button" class="ba-stage-pill active" data-stage-img="assets/premium_stage_crimson_curtain.jpg" data-stage-title="Grand Crimson Mandap">
-              🌺 Crimson Mandap
+            <span class="ba-stage-label">Venue Concept:</span>
+            <button type="button" class="ba-stage-pill active" data-stage-before="assets/venue_grand_convention_before.jpg" data-stage-img="assets/venue_grand_convention_after.jpg" data-stage-title="Grand Royal Convention Palace">
+              🏛️ Grand Convention Palace
             </button>
-            <button type="button" class="ba-stage-pill" data-stage-img="assets/premium_stage_victorian_palace.jpg" data-stage-title="Victorian Palace Ballroom">
-              🏛️ Victorian Palace
-            </button>
-            <button type="button" class="ba-stage-pill" data-stage-img="assets/premium_stage_greenery_chandelier.jpg" data-stage-title="Living Green Oasis & Chandeliers">
-              🌿 Green Oasis
+            <button type="button" class="ba-stage-pill" data-stage-before="assets/venue_luxury_ballroom_before.jpg" data-stage-img="assets/venue_luxury_ballroom_after.jpg" data-stage-title="Opulent Gold Floral Ballroom">
+              ✨ Luxury Gold Ballroom
             </button>
           </div>
         </div>
 
         <!-- Modern Interactive Hardware-Accelerated Transformation Showcase -->
         <div class="before-after-container" id="beforeAfterContainer" style="--split-pos: 50%;">
-          <!-- Before Background (Pure White Canvas) -->
-          <div class="ba-image-wrapper ba-white-canvas"></div>
+          <!-- Before Background (Empty Bare Venue Matching Selected Setup) -->
+          <div class="ba-image-wrapper" id="baBeforeWrapper">
+            <img src="assets/venue_grand_convention_before.jpg" id="baBeforeImgTag" alt="Bare Empty Venue Hall Before Whylohome Decoration" loading="eager">
+          </div>
 
           <!-- After Image (Clipped overlay) -->
           <div class="ba-image-after" id="baAfterImg">
-            <img src="assets/premium_stage_crimson_curtain.jpg" id="baAfterImgTag" alt="Royal Wedding Mandap After Whylohome Decoration" loading="lazy">
+            <img src="assets/venue_grand_convention_after.jpg" id="baAfterImgTag" alt="Grand Royal Convention Palace After Whylohome Decoration" loading="eager">
           </div>
 
           <!-- Radiant Golden Scanline & Laser Handle -->
@@ -1437,11 +1436,11 @@
           <!-- Badges -->
           <div class="ba-badge before">
             <span class="badge-dot dot-red"></span>
-            Blank Canvas
+            Bare Empty Venue
           </div>
           <div class="ba-badge after" id="baAfterBadge">
             <span class="badge-dot dot-gold"></span>
-            Whylohome Royal Setup
+            Grand Royal Convention Palace
           </div>
         </div>
 

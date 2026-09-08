@@ -1905,6 +1905,7 @@ img {
   object-fit: cover;
   pointer-events: none;
   transform: translateZ(0);
+  transition: opacity 0.2s ease-in-out;
 }
 
 .ba-image-after {
@@ -1925,6 +1926,7 @@ img {
   object-fit: cover;
   pointer-events: none;
   transform: translateZ(0);
+  transition: opacity 0.2s ease-in-out;
 }
 
 /* Radiant Golden Laser Handle & Scanline */
